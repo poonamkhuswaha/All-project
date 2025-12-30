@@ -33,7 +33,7 @@ public class Login {
 	@FindBy (xpath="//*[text()=\"Sign In\"]")
 	private WebElement sign;
 	
-	public WebElement getButton()
+	public WebElement getSignInButton()
 	{
 		return sign;
 		

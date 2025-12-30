@@ -99,8 +99,4 @@ public class Dashboard extends Login {
          driver.findElement(By.xpath("//button[@title=\"Save\"]")).click();
          
                 }       
-               
-                }            
-     
-
-
+}

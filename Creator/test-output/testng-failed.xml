@@ -5,9 +5,9 @@
     <classes>
       <class name="creatorapp.Dashboard">
         <methods>
-          <include name="logOut"/>
           <include name="openBrowser"/>
           <include name="devLogin"/>
+          <include name="closeBroswer"/>
           <include name="Dashboard1"/>
           <include name="Dashboard2"/>
         </methods>

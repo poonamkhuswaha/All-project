@@ -5,7 +5,11 @@
   
   <parameter name="BROWSER" value="chrome"></parameter>
     <classes>
-      <class name="tests.SignUpTest"/>
+      <class name="tests.loginTest"/>
     </classes>
   </test> 
 </suite> 
+
+
+
+<!-- tests.SignUpTest -->

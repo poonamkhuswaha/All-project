@@ -4,13 +4,12 @@
   <test thread-count="5" name="CreatorSuite(failed)">
     <parameter name="BROWSER" value="chrome"/>
     <classes>
-      <class name="tests.SignUpTest">
+      <class name="tests.loginTest">
         <methods>
-          <include name="testSignUP"/>
-          <include name="teardown"/>
+          <include name="testLogin"/>
           <include name="setup"/>
         </methods>
-      </class> <!-- tests.SignUpTest -->
+      </class> <!-- tests.loginTest -->
     </classes>
   </test> <!-- CreatorSuite(failed) -->
 </suite> <!-- Failed suite [Suite] -->

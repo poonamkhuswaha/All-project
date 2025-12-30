@@ -43,19 +43,15 @@ public class Login {
 			WebElement password = driver.findElement(By.xpath("//*[@type=\"password\"]"));
 			email.clear();
 			password.sendKeys("Sonu@1111");
+			
+			WebElement loginbutton=driver.findElement(By.xpath("//*[text()='Sign In']"));
+			loginbutton.click();
 	}
 	
 	
-	public void Signinbutton()
-	{
-			WebElement loginbutton=driver.findElement(By.xpath("//*[text()='Sign In']"));
-			loginbutton.click();
-	
-		
-		}
 	 @AfterClass
 	public void closeBroswer()
 	{
-		driver.quit();
+		//driver.quit();
 	}
 	}

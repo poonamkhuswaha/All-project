@@ -18,9 +18,5 @@ public class SignUpTest extends BaseTest {
 		
 		
 	}
-	
-
-
-
 
 }

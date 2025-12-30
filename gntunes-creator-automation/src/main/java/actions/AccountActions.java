@@ -2,6 +2,8 @@ package actions;
 
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
 
 import pages.SignUp;
 import pages.Login;        // <-- Make sure this path is correct
@@ -14,23 +16,17 @@ public class AccountActions
 
     private WebDriver driver;
     private SignUp sp;
-    private Login lg;
 
     // Constructor for SignUp actions
     public AccountActions(WebDriver driver) {
         this.driver = driver;
-        this.sp = new SignUp(driver);
-        this.lg= new Login(driver);
+       this.sp = new SignUp(driver);
     }
 
-    // Overloaded constructor for Login actions  
-    public AccountActions(WebDriver driver, boolean isLogin) {
-        this.driver = driver;
-        this.lg = new Login(driver);
-    }
-
-    public void openPage() {
-        driver.get(Config.Base_URL1);
+  
+    public void openPage() 
+    {
+    	driver.get(Config.BASE_URL);
     }
 
     public void SignUpPage() {
@@ -46,11 +42,5 @@ public class AccountActions
         sp.getSignupBtn().click();
     }
 
-    public void LoginPage() {
-
-        lg.getEmail().sendKeys(TestDataforlogin.EMAIL);
-        lg.getPass().sendKeys(TestDataforlogin.PASSWORD);
-        lg.getButton().click();
-    }
-
+  
 }
